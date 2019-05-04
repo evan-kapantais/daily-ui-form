@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(198, 215, 236);
+  font-family: 'Sofia', cursive, Arial, Helvetica, sans-serif;
+}
+
+.row {
+  max-width: 800px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 5px rgb(170, 170, 170);
+}
+
+.primary, legend {
+  margin-bottom: 40px;
+}
+
+legend {
+  font-size: 2.25em;
+}
+
+.col-md-7 {
+  padding: 40px;
+}
+
+.col-md-5 {
+  padding: 0;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.col-md-5 img{
+  width: 100%;
+  background-position: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 1s ease-out;
+}
+
+.col-md-5:hover > img {
+  transform: scale(1.1);
+}
+
+
+label, input {
+  display: block;
+}
+
+label[for="remember"] {
+  display: initial;
+  transition: all .5s; 
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+label[for="remember"] {
+  font-size: 1.05em;
+}
+
+.text-input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 5px;
+  transition: all .3s;
+}
+
+.text-input:focus {
+  box-shadow: 0 0 5px 2px rgb(198, 215, 236);
+}
+
+button {
+  display: block;
+  background: #23467C;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  transition: all .2s;
+}
+
+button:active {
+  transform: scale(.9);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  animation: wiggle .5s 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+}
